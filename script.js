@@ -64,16 +64,18 @@ const arrayStrings = ['aa', 'bb', 'xx', 'zz', 'xx', 'bb']
 // }
 // console.log(getUniqueValues2(arrayStrings))
 
-const getUniqueValues3 = (arr) => {
-    const set = new Set(arr)
-    return Array.from(set)
-    // console.log(result)
-}
+// const getUniqueValues3 = (arr) => {
+//     const set = new Set(arr)
+//     return Array.from(set)
+// }
 
-console.log(getUniqueValues3(arrayStrings))
+// console.log(getUniqueValues3(arrayStrings))
 
+//setTimeout
+let a = 0
+const func = (a) => console.log(a)
 
-
-
+const timerId = setInterval(func, 1000, 'tick')
+setTimeout(() => clearInterval(timerId), 3000)
 
 
