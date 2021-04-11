@@ -41,18 +41,37 @@ let persons = [
 
 // console.log(resultFromObjectEntries)
 
-const arrayStrings = ['aa','bb','xx','zz','xx','bb']
+const arrayStrings = ['aa', 'bb', 'xx', 'zz', 'xx', 'bb']
 
-const getUniqueValues = (arr)=>{
-    let array = []
-    for (let i = 0; i < arr.length; i++) {    
-       if(!array.includes(arr[i])){
-        array.push(arr[i])
-       }   
-    }
-    return array
+// const getUniqueValues1 = (arr)=>{
+//     let array = []
+//     for (let i = 0; i < arr.length; i++) {    
+//        if(!array.includes(arr[i])){
+//         array.push(arr[i])
+//        }   
+//     }
+//     return array
+// }
+// console.log(getUniqueValues1(arrayStrings));
+
+
+// const getUniqueValues2 = (arr) => {
+//     const obj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//        obj[arr[i]] = true
+//     }   
+//     return Object.keys(obj)
+// }
+// console.log(getUniqueValues2(arrayStrings))
+
+const getUniqueValues3 = (arr) => {
+    const set = new Set(arr)
+    return Array.from(set)
+    // console.log(result)
 }
-console.log(getUniqueValues(arrayStrings))
+
+console.log(getUniqueValues3(arrayStrings))
+
 
 
 
