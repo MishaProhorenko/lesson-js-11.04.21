@@ -108,5 +108,6 @@ const func = function getCount(param1,param2) {
 
 func.apply(obj,[1,3])
 
-
 obj.sayName.apply(persons[1])
+
+
