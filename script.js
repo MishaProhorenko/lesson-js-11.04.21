@@ -86,3 +86,14 @@ const arrayStrings = ['aa', 'bb', 'xx', 'zz', 'xx', 'bb']
 // showMessageXTimes('sos', 2)
 
 
+const obj = {
+    name: 'John',
+    sayName: function () {
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+// obj.sayName()
+// setInterval(() => obj.sayName(), 750)
+const sayName = obj.sayName.bind(obj)
+sayName()
