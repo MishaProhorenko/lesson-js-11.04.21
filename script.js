@@ -72,10 +72,17 @@ const arrayStrings = ['aa', 'bb', 'xx', 'zz', 'xx', 'bb']
 // console.log(getUniqueValues3(arrayStrings))
 
 //setTimeout
-let a = 0
-const func = (a) => console.log(a)
+// let a = 0
+// const func = (a) => console.log(a)
 
-const timerId = setInterval(func, 1000, 'tick')
-setTimeout(() => clearInterval(timerId), 3000)
+// const timerId = setInterval(func, 1000, 'tick')
+// setTimeout(() => clearInterval(timerId), 3000)
+
+
+// let showMessageXTimes = (message, times) => {
+//     let timerId = setInterval(() => console.log(message), 1000)
+//     setTimeout(() => clearInterval(timerId), times * 1000)
+// }
+// showMessageXTimes('sos', 2)
 
 
