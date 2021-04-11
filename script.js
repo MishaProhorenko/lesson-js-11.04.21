@@ -31,12 +31,30 @@ let persons = [
     },
 ];
 
-const obj = persons[1]
+// const obj = persons[1]
 
-let resultOfObjectEntries = Object.entries(obj)
+// let resultOfObjectEntries = Object.entries(obj)
 
-console.log(resultOfObjectEntries)
+// console.log(resultOfObjectEntries)
 
-let resultFromObjectEntries = Object.fromEntries(resultOfObjectEntries)
+// let resultFromObjectEntries = Object.fromEntries(resultOfObjectEntries)
 
-console.log(resultFromObjectEntries)
+// console.log(resultFromObjectEntries)
+
+const arrayStrings = ['aa','bb','xx','zz','xx','bb']
+
+const getUniqueValues = (arr)=>{
+    let array = []
+    for (let i = 0; i < arr.length; i++) {    
+       if(!array.includes(arr[i])){
+        array.push(arr[i])
+       }   
+    }
+    return array
+}
+console.log(getUniqueValues(arrayStrings))
+
+
+
+
+
