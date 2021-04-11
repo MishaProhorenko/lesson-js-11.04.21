@@ -88,6 +88,7 @@ const arrayStrings = ['aa', 'bb', 'xx', 'zz', 'xx', 'bb']
 
 const obj = {
     name: 'John',
+    count: 10,
     sayName: function () {
         console.log(`My name is ${this.name}`);
     }
@@ -95,5 +96,17 @@ const obj = {
 
 // obj.sayName()
 // setInterval(() => obj.sayName(), 750)
-const sayName = obj.sayName.bind(obj)
-sayName()
+// const sayName = obj.sayName.bind(obj)
+// sayName()
+
+
+
+const func = function getCount(param1,param2) {
+   console.log(this.count + param1+ param2);
+
+}
+
+func.apply(obj,[1,3])
+
+
+obj.sayName.apply(persons[1])
